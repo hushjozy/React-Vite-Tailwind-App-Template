@@ -83,10 +83,10 @@ export function GalleryMasonry() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           className="mb-16 text-center"
         >
-          <h2 className="mb-4 text-balance text-4xl font-bold md:text-5xl">
+          <h2 className="mb-4 text-balance text-4xl font-bold text-white md:text-5xl">
             Portfolio
           </h2>
-          <p className="text-balance text-xl text-muted-foreground">
+          <p className="text-balance text-xl text-white/70">
             Explore our creative work
           </p>
         </motion.div>
@@ -218,7 +218,7 @@ export function GalleryCarousel() {
   }));
 
   return (
-    <section ref={ref} className="bg-muted px-4 pb-20">
+    <section ref={ref} className="bg-muted px-4 pb-5 lg:pb-20">
       <div className="mx-auto max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -248,25 +248,27 @@ export function GalleryCarousel() {
             </div>
           </motion.div>
 
-          <div className="flex justify-center gap-2">
-            {sample?.map((img, i) => (
-              <button
-                key={i}
-                onClick={() => setCurrentIndex(i)}
-                className={`h-12 w-12 rounded-lg transition-colors ${
-                  i === currentIndex ? "bg-foreground" : "!bg-white/50"
-                }`}
-              >
-                {" "}
-                <img
-                  src={img.thumbnail}
-                  height="600"
-                  width="600"
-                  className="h-full w-full object-cover object-left-top"
-                  alt={img.title}
-                />
-              </button>
-            ))}
+          <div className="flex w-full justify-start gap-2 overflow-x-auto">
+            <div className="flex w-fit justify-center gap-2">
+              {sample?.map((img, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentIndex(i)}
+                  className={`h-12 min-w-12 rounded-lg transition-colors ${
+                    i === currentIndex ? "bg-foreground" : "!bg-white/50"
+                  }`}
+                >
+                  {" "}
+                  <img
+                    src={img.thumbnail}
+                    height="600"
+                    width="600"
+                    className="h-full w-full object-cover object-left-top"
+                    alt={img.title}
+                  />
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -294,14 +296,14 @@ export function GalleryHoverCards() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          className="mb-16 text-center"
+          className="my-10 text-center"
         >
-          <h2 className="mb-4 text-balance text-4xl font-bold md:text-5xl">
+          <h2 className="mb-4 text-balance text-4xl font-bold text-white md:text-5xl">
             Recent Projects
           </h2>
-          <p className="text-balance text-xl !text-white">
+          {/* <p className="text-balance text-xl !text-white">
             Hover to see details
-          </p>
+          </p> */}
         </motion.div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

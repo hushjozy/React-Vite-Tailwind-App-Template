@@ -452,11 +452,11 @@ export function HeroParallaxScroll() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex items-center justify-center gap-4"
         >
-          <ButtonGradientShimmer className="!border-[0.5px] !border-white !text-white">
+          <ButtonGradientShimmer className="!border-[0.5px] !border-white !px-[10px] !text-white">
             Get a Free Quote
           </ButtonGradientShimmer>
 
-          <ButtonPulseSuccess className="border-[0.5px] !border-white !bg-black/50 !text-white">
+          <ButtonPulseSuccess className="border-[0.5px] !border-white !bg-black/50 !px-[10px] !text-white">
             View Our Work
           </ButtonPulseSuccess>
         </motion.div>

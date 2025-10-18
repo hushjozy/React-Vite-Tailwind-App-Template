@@ -447,7 +447,7 @@ export function TestimonialMarquee() {
     <Vortex>
       <section className="overflow-hidden py-20">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-balance bg-gradient-to-b from-white/70 to-white/90 bg-clip-text text-4xl font-bold text-transparent drop-shadow-2xl md:text-5xl">
+          <h2 className="mb-4 text-balance bg-gradient-to-b from-white/70 to-white/90 bg-clip-text text-2xl font-bold text-transparent drop-shadow-2xl md:text-5xl lg:text-4xl">
             Join thousands of happy customers
           </h2>
         </div>
