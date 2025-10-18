@@ -236,7 +236,7 @@ export function TestimonialFeaturedQuote() {
             It's simply the best tool we've ever used."
           </blockquote>
           <div className="flex items-center justify-center gap-4">
-            <div className="bg-background/20 h-16 w-16 rounded-full" />
+            <div className="h-16 w-16 rounded-full bg-background/20" />
             <div className="text-left">
               <div className="text-lg font-bold">Jennifer Martinez</div>
               <div className="text-background/70">
@@ -284,9 +284,9 @@ export function TestimonialVideoGrid() {
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
-                  className="from-foreground/10 to-foreground/5 flex h-full w-full items-center justify-center bg-gradient-to-br"
+                  className="flex h-full w-full items-center justify-center bg-gradient-to-br from-foreground/10 to-foreground/5"
                 >
-                  <div className="bg-foreground/20 flex h-16 w-16 items-center justify-center rounded-full">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-foreground/20">
                     <div className="border-l-12 ml-1 h-0 w-0 border-b-8 border-t-8 border-b-transparent border-l-foreground border-t-transparent" />
                   </div>
                 </motion.div>
@@ -467,7 +467,7 @@ export function TestimonialMarquee() {
                 key={i}
                 className="w-80 flex-shrink-0 rounded-2xl border !border-white/80 bg-black/50 p-6"
               >
-                <div className="mb-4 flex gap-1">
+                <div className="mx-auto mb-4 flex gap-1 lg:mx-0">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star
                       key={i}
@@ -475,7 +475,7 @@ export function TestimonialMarquee() {
                     />
                   ))}
                 </div>
-                <p className="mb-4 bg-gradient-to-b from-white/70 to-white/90 bg-clip-text font-light text-transparent drop-shadow-2xl">
+                <p className="mb-4 bg-gradient-to-b from-white/70 to-white/90 bg-clip-text text-center font-light text-transparent drop-shadow-2xl lg:text-left">
                   {testimonial.content}
                 </p>
                 <div className="bg-gradient-to-b from-white/70 to-white/90 bg-clip-text font-semibold text-transparent drop-shadow-2xl">

@@ -14,10 +14,10 @@ import Waves from "../components/Waves.js";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full">
+    <div className="min-h-screen w-full overflow-x-hidden">
       <div
         style={{ width: "100%", position: "absolute" }}
-        className="left-0 top-0 h-[1080px]"
+        className="left-0 top-0 h-[950px] lg:h-[1080px]"
       >
         {/* <LiquidEther
           colors={["#dcb3e3e0", "#3d0c34e0", "#577daee0"]}

@@ -30,12 +30,12 @@ export function HeroCenteredFloating() {
       <motion.div
         animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
         transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY }}
-        className="bg-foreground/5 absolute left-10 top-20 h-20 w-20 rounded-full blur-xl"
+        className="absolute left-10 top-20 h-20 w-20 rounded-full bg-foreground/5 blur-xl"
       />
       <motion.div
         animate={{ y: [0, 20, 0], rotate: [0, -5, 0] }}
         transition={{ duration: 7, repeat: Number.POSITIVE_INFINITY }}
-        className="bg-foreground/5 absolute bottom-20 right-10 h-32 w-32 rounded-full blur-xl"
+        className="absolute bottom-20 right-10 h-32 w-32 rounded-full bg-foreground/5 blur-xl"
       />
 
       <div className="relative z-10 mx-auto max-w-4xl text-center">
@@ -145,7 +145,7 @@ export function HeroSplitScreen() {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="relative"
       >
-        <div className="from-foreground/10 to-foreground/5 aspect-square rounded-3xl bg-gradient-to-br" />
+        <div className="aspect-square rounded-3xl bg-gradient-to-br from-foreground/10 to-foreground/5" />
         <motion.div
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
@@ -240,7 +240,7 @@ export function HeroVideoBackground() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
       {/* Video Placeholder */}
-      <div className="from-foreground/20 to-foreground/5 absolute inset-0 bg-gradient-to-br" />
+      <div className="absolute inset-0 bg-gradient-to-br from-foreground/20 to-foreground/5" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
         <motion.h1
@@ -392,7 +392,7 @@ export function HeroParallaxScroll() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-6 text-balance text-6xl font-bold text-white md:text-8xl"
+          className="mx-auto mb-6 w-[70%] text-balance text-4xl font-bold text-white md:text-8xl lg:text-6xl"
         >
           We Design. Develop. Deploy.
         </motion.h1>
@@ -401,39 +401,46 @@ export function HeroParallaxScroll() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mx-auto mb-8 w-fit text-balance rounded-[5px] bg-black px-[12px] text-2xl text-white"
+          className="mx-auto mb-8 w-[68%] text-wrap rounded-[5px] bg-black px-[12px] text-lg text-white lg:w-fit lg:text-balance lg:text-2xl"
         >
           <TypewriterEffectSmooth
             className="h-fit !pb-0"
-            cursorClassName="h-[16px]"
+            cursorClassName="text-wrap lg:text-nowrap  lg:h-[16px]"
             words={[
               {
                 text: "Building",
-                className: "!text-[#fff] font-light !text-[22px] ",
+                className:
+                  "!text-[#fff] font-bold lg:font-light text-[16px] !lg:text-[22px] ",
               },
               {
                 text: "Beautiful",
-                className: "!text-[#fff] font-light !text-[22px] ",
+                className:
+                  "!text-[#fff] font-bold lg:font-light text-[16px] !lg:text-[22px] ",
               },
               {
                 text: "Digital",
-                className: "!text-[#fff] font-light !text-[22px] ",
+                className:
+                  "!text-[#fff] font-bold lg:font-light text-[16px] !lg:text-[22px] ",
               },
               {
                 text: "Experiences",
-                className: "!text-[#fff] font-light !text-[22px] ",
+                className:
+                  "!text-[#fff] font-bold lg:font-light text-[16px] !lg:text-[22px] ",
               },
               {
                 text: "That",
-                className: "!text-[#fff] font-light !text-[22px] ",
+                className:
+                  "!text-[#fff] font-bold lg:font-light text-[16px] !lg:text-[22px] ",
               },
               {
                 text: "Drive",
-                className: "!text-[#fff] font-light !text-[22px] ",
+                className:
+                  "!text-[#fff] font-bold lg:font-light text-[16px] !lg:text-[22px] ",
               },
               {
                 text: "Growth",
-                className: "!text-[#fff] font-light !text-[22px] ",
+                className:
+                  "!text-[#fff] font-bold lg:font-light text-[16px] !lg:text-[22px] ",
               },
             ]}
           />

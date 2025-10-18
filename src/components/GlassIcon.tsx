@@ -30,7 +30,9 @@ const GlassIcons: React.FC<GlassIconsProps> = ({ items, className }) => {
   };
 
   return (
-    <div className={`icon-btns ${className || ""}`}>
+    <div
+      className={`mx-auto flex !w-fit justify-center py-[20px] lg:mx-0 lg:justify-start ${className || ""}`}
+    >
       {items.map((item, index) => (
         <button
           key={index}

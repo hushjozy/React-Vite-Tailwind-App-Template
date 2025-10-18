@@ -141,7 +141,7 @@ export function AboutValuesGrid() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: i * 0.1 }}
-              className="hover:border-foreground/20 rounded-2xl border border-border p-6 transition-colors"
+              className="rounded-2xl border border-border p-6 transition-colors hover:border-foreground/20"
             >
               <value.icon className="mb-4 h-12 w-12" />
               <h3 className="mb-2 text-xl font-bold">{value.title}</h3>
@@ -345,7 +345,7 @@ export function AboutTeamFocused() {
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
-                  className="from-foreground/10 to-foreground/5 h-full w-full bg-gradient-to-br"
+                  className="h-full w-full bg-gradient-to-br from-foreground/10 to-foreground/5"
                 />
               </div>
               <h3 className="mb-1 text-xl font-bold">Team Member {i}</h3>
@@ -509,8 +509,8 @@ export function AboutFeatureHighlights() {
               {feature?.animation}
 
               <div className={i % 2 === 1 ? "md:order-2" : ""}>
-                {feature?.icon}
-                <h3 className="mb-4 text-3xl font-bold text-white">
+                <div className="mx-auto lg:mx-0">{feature?.icon}</div>
+                <h3 className="mb-4 text-center text-3xl font-bold text-white lg:text-left">
                   {feature.title}
                 </h3>
 

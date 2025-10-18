@@ -93,7 +93,7 @@ export function ServiceIconGrid() {
   ];
 
   return (
-    <section ref={ref} className="px-4 py-20">
+    <section ref={ref} className="px-4 py-0 lg:py-20">
       <BackgroundGradientAnimation>
         <div className="mx-auto">
           <motion.div
@@ -146,7 +146,7 @@ export function ServiceBentoLayout() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="bg-muted px-4 py-20">
+    <section ref={ref} className="bg-muted px-4 py-10 lg:py-20">
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -577,7 +577,7 @@ export function ServicePricingTiers() {
               <ul className="mb-8 space-y-3">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-2">
-                    <div className="bg-foreground/10 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full">
+                    <div className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-foreground/10">
                       <div className="h-2 w-2 rounded-full bg-foreground" />
                     </div>
                     <span className="text-sm">{feature}</span>
