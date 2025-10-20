@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 import { useRef, useState } from "react";
 import { BackgroundGradientAnimation } from "../ui/background-gradient-animation.js";
+import ScrollStack, { ScrollStackItem } from "../../components/ScrollStack.js";
 
 // Service Variant 1: Icon Grid
 export function ServiceIconGrid() {

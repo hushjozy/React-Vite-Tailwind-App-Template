@@ -12,6 +12,9 @@ import { Footer4 } from "../components/sections/footer-variants.js";
 import { HeroParallaxRender } from "../components/parallax/HeroParallaxRender.js";
 import Waves from "../components/Waves.js";
 import { TextHoverEffect } from "../components/ui/text-hover-effect.js";
+import ScrollStack, { ScrollStackItem } from "../components/ScrollStack.js";
+import { Cloud, Cpu, Icon, Layers, Lightbulb, Rocket } from "lucide-react";
+import BlurText from "../components/BlurText.js";
 
 export default function Home() {
   return (
@@ -68,6 +71,96 @@ export default function Home() {
           <TextHoverEffect text="MAGICAL" />
         </div>
         <Service1 />
+        <ScrollStack className="!relative !h-[100vh] py-[20%]">
+          <ScrollStackItem itemClassName="!bg-[#8A2BE2] !h-fit !py-[80px] !flex !flex-row justify-center  flex-wrap lg:flex-nowrap gap-[40px] !px-[20%]">
+            <div>
+              <BlurText
+                text="Create Bold"
+                delay={100}
+                animateBy="words"
+                direction="top"
+                // onAnimationComplete={handleAnimationComplete}
+                className="text-[30px] font-bold text-white lg:text-[50px]"
+              />
+            </div>
+            <div className="flex h-[220px] flex-grow items-center justify-center rounded-[25px] border-[14px] border-white px-[40px] py-[20px]">
+              <Lightbulb
+                className="h-[80px] w-[80px] text-white"
+                strokeWidth={3}
+              />
+            </div>
+          </ScrollStackItem>
+
+          <ScrollStackItem itemClassName="!bg-[#00C9A7] !h-fit !py-[80px] !flex !flex-row justify-center  flex-wrap lg:flex-nowrap gap-[40px] !px-[20%]">
+            <div>
+              <BlurText
+                text="Design Smart"
+                delay={100}
+                animateBy="words"
+                direction="top"
+                // onAnimationComplete={handleAnimationComplete}
+                className="text-[30px] font-bold text-white lg:text-[50px]"
+              />
+            </div>
+            <div className="flex h-[220px] flex-grow items-center justify-center rounded-[25px] border-[14px] border-white px-[40px] py-[20px]">
+              <Cpu className="h-[80px] w-[80px] text-white" strokeWidth={3} />
+            </div>
+          </ScrollStackItem>
+
+          <ScrollStackItem itemClassName="!bg-[#FF7B00] !h-fit !py-[80px] !flex !flex-row justify-center  flex-wrap lg:flex-nowrap gap-[40px] !px-[20%]">
+            <div>
+              <BlurText
+                text="Build Fast"
+                delay={150}
+                animateBy="words"
+                direction="top"
+                // onAnimationComplete={handleAnimationComplete}
+                className="text-[30px] font-bold text-white lg:text-[50px]"
+              />
+            </div>
+            <div className="flex h-[220px] flex-grow items-center justify-center rounded-[25px] border-[14px] border-white px-[40px] py-[20px]">
+              <Rocket
+                className="h-[80px] w-[80px] text-white"
+                strokeWidth={3}
+              />
+            </div>
+          </ScrollStackItem>
+
+          <ScrollStackItem itemClassName="!bg-[#1E90FF] !h-fit !py-[80px] !flex !flex-row justify-center  flex-wrap lg:flex-nowrap gap-[40px] !px-[20%]">
+            <div>
+              <BlurText
+                text="Innovate More"
+                delay={150}
+                animateBy="words"
+                direction="top"
+                // onAnimationComplete={handleAnimationComplete}
+                className="text-[30px] font-bold text-white lg:text-[50px]"
+              />
+            </div>
+            <div className="flex h-[220px] flex-grow items-center justify-center rounded-[25px] border-[14px] border-white px-[40px] py-[20px]">
+              <Layers
+                className="h-[80px] w-[80px] text-white"
+                strokeWidth={3}
+              />
+            </div>
+          </ScrollStackItem>
+
+          <ScrollStackItem itemClassName="!bg-[#FF1493] !h-fit !py-[80px] !flex !flex-row justify-center  flex-wrap lg:flex-nowrap gap-[40px] !px-[20%]">
+            <div>
+              <BlurText
+                text="Evolve Digitally"
+                delay={150}
+                animateBy="words"
+                direction="top"
+                // onAnimationComplete={handleAnimationComplete}
+                className="text-[30px] font-bold text-white lg:text-[50px]"
+              />
+            </div>
+            <div className="flex h-[220px] flex-grow items-center justify-center rounded-[25px] border-[14px] border-white px-[40px] py-[20px]">
+              <Cloud className="h-[80px] w-[80px] text-white" strokeWidth={3} />
+            </div>
+          </ScrollStackItem>
+        </ScrollStack>
         <TestimonialMarquee />
 
         <GalleryMasonry />
