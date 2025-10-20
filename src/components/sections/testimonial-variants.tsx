@@ -447,7 +447,7 @@ export function TestimonialMarquee() {
     <Vortex>
       <section className="overflow-hidden py-20">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-balance bg-gradient-to-b from-white/70 to-white/90 bg-clip-text text-2xl font-bold text-transparent drop-shadow-2xl md:text-5xl lg:text-4xl">
+          <h2 className="mb-4 text-balance bg-gradient-to-b from-white/70 to-white/90 bg-clip-text text-2xl font-bold text-white drop-shadow-2xl md:text-5xl lg:text-4xl lg:text-transparent">
             Join thousands of happy customers
           </h2>
         </div>
@@ -467,7 +467,7 @@ export function TestimonialMarquee() {
                 key={i}
                 className="w-80 flex-shrink-0 rounded-2xl border !border-white/80 bg-black/50 p-6"
               >
-                <div className="mx-auto mb-4 flex gap-1 lg:mx-0">
+                <div className="mx-auto mb-4 flex w-fit gap-1 lg:mx-0">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star
                       key={i}
@@ -475,10 +475,10 @@ export function TestimonialMarquee() {
                     />
                   ))}
                 </div>
-                <p className="mb-4 bg-gradient-to-b from-white/70 to-white/90 bg-clip-text text-center font-light text-transparent drop-shadow-2xl lg:text-left">
+                <p className="mb-4 bg-gradient-to-b from-white/70 to-white/90 bg-clip-text text-center font-light text-white drop-shadow-2xl lg:text-left lg:text-transparent">
                   {testimonial.content}
                 </p>
-                <div className="bg-gradient-to-b from-white/70 to-white/90 bg-clip-text font-semibold text-transparent drop-shadow-2xl">
+                <div className="bg-gradient-to-b from-white/70 to-white/90 bg-clip-text text-center font-semibold text-white drop-shadow-2xl lg:text-left lg:text-transparent">
                   {testimonial.name}
                 </div>
               </div>

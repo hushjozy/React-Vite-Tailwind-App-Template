@@ -288,7 +288,7 @@ export function NavbarGlassmorphism() {
             whileHover={{ scale: 1.05 }}
             className="relative w-[140px] text-xl font-bold"
           >
-            <img alt="logo" src={"/pd-flat.png"} className="h-[50px] w-auto" />
+            <img alt="logo" src={"/pd-flat.webp"} className="h-[50px] w-auto" />
           </motion.div>
 
           <div className="hidden items-center gap-8 md:flex">

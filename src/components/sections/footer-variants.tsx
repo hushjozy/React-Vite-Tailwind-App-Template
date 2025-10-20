@@ -275,25 +275,29 @@ export function FooterContactInfo() {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <div className="mb-4 text-2xl font-bold">Pure design</div>
-            <p className="mb-6 text-white/60">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="relative w-[140px] text-xl font-bold"
+            >
+              <img
+                alt="logo"
+                src={"/pd-square.webp"}
+                className="mb-4 h-[80px] w-auto"
+              />
+            </motion.div>
+
+            <p className="mb-6 !text-white/80">
               We're here to help you build amazing digital experiences. Get in
               touch with us today.
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm">
-                <Mail className="h-5 w-5 text-white/60" />
-                <span className="text-white/80">hello@Pure design.com</span>
+                <Mail className="h-5 w-5 !text-white/80" />
+                <span className="text-white/80">info@puredesign.ng</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
-                <Phone className="h-5 w-5 text-white/60" />
-                <span className="text-white/80">+1 (555) 123-4567</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm">
-                <MapPin className="h-5 w-5 text-white/60" />
-                <span className="text-white/80">
-                  123 Main St, San Francisco, CA 94102
-                </span>
+                <Phone className="h-5 w-5 !text-white/80" />
+                <span className="text-white/80">+234 91342448820</span>
               </div>
             </div>
           </motion.div>
@@ -312,7 +316,7 @@ export function FooterContactInfo() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <h3 className="mb-4 font-semibold">{column.title}</h3>
+              <h3 className="mb-4 font-semibold !text-white">{column.title}</h3>
               <ul className="space-y-3">
                 {column.links.map((link) => (
                   <li key={link}>

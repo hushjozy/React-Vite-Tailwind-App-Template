@@ -26,8 +26,6 @@ import {
   PenTool,
 } from "lucide-react";
 import { useRef, useState } from "react";
-import { PointerHighlight } from "../ui/pointer-highlight.js";
-import { Vortex } from "../ui/vortex.js";
 import { BackgroundGradientAnimation } from "../ui/background-gradient-animation.js";
 
 // Service Variant 1: Icon Grid
@@ -123,11 +121,11 @@ export function ServiceIconGrid() {
                 {service.icon && (
                   <service.icon className="mb-4 h-12 w-12 !text-white" />
                 )}
-                <PointerHighlight pointerClassName="hidden">
-                  <h3 className="mb-2 text-xl font-bold !text-white">
-                    {service.title}
-                  </h3>
-                </PointerHighlight>
+                {/* <PointerHighlight pointerClassName="hidden"> */}
+                <h3 className="mb-2 text-xl font-bold !text-white">
+                  {service.title}
+                </h3>
+                {/* </PointerHighlight> */}
                 <p className="font-light text-white/70">
                   {service.description}
                 </p>
