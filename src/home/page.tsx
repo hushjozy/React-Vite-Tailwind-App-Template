@@ -11,6 +11,7 @@ import {
 import { Footer4 } from "../components/sections/footer-variants.js";
 import { HeroParallaxRender } from "../components/parallax/HeroParallaxRender.js";
 import Waves from "../components/Waves.js";
+import { TextHoverEffect } from "../components/ui/text-hover-effect.js";
 
 export default function Home() {
   return (
@@ -60,6 +61,12 @@ export default function Home() {
         <HeroParallaxScroll />
         <HeroParallaxRender />
         <AboutFeatureHighlights />
+        <div className="flex h-[30rem] w-full items-center justify-center">
+          <TextHoverEffect text="PURELY" />
+        </div>
+        <div className="flex h-[30rem] w-full items-center justify-center">
+          <TextHoverEffect text="MAGICAL" />
+        </div>
         <Service1 />
         <TestimonialMarquee />
 
