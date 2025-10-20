@@ -146,7 +146,7 @@ export function NavbarCenteredLogo() {
           </div>
 
           <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-            {isOpen ? <X /> : <Menu />}
+            {isOpen ? <X color="#fff" /> : <Menu color="#fff" />}
           </button>
         </div>
       </div>
