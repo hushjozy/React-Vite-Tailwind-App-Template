@@ -71,7 +71,7 @@ export default function Home() {
           <TextHoverEffect text="MAGICAL" />
         </div>
         <Service1 />
-        <ScrollStack className="!relative !h-[100vh] py-[20%]">
+        <ScrollStack className="!relative !h-[100vh] py-[20px] lg:py-[20%]">
           <ScrollStackItem itemClassName="!bg-[#8A2BE2] !h-fit !py-[80px] !flex !flex-row justify-center  flex-wrap lg:flex-nowrap gap-[40px] !px-[20%]">
             <div>
               <BlurText
