@@ -104,7 +104,7 @@ export function NavbarCenteredLogo() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: i * 0.1 }}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="text-sm font-medium text-white transition-colors hover:text-foreground"
               >
                 {item}
               </motion.a>
@@ -116,9 +116,9 @@ export function NavbarCenteredLogo() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 200 }}
-            className="absolute left-1/2 -translate-x-1/2 text-2xl font-bold"
+            className="mx-auto font-bold"
           >
-            LOGO
+            <img alt="logo" src={"/pd-flat.webp"} className="h-[60px] w-auto" />
           </motion.div>
 
           {/* Right Menu */}
@@ -130,7 +130,7 @@ export function NavbarCenteredLogo() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: (i + 2) * 0.1 }}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="text-sm font-medium text-white transition-colors hover:text-foreground"
               >
                 {item}
               </motion.a>
@@ -139,7 +139,7 @@ export function NavbarCenteredLogo() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               whileHover={{ scale: 1.05 }}
-              className="rounded-lg bg-foreground px-4 py-2 text-sm font-medium text-background"
+              className="rounded-lg bg-foreground px-4 py-2 text-sm font-medium text-white"
             >
               Sign In
             </motion.button>

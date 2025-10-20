@@ -1,7 +1,7 @@
 import { HeroParallaxScroll } from "@/components/sections/hero-variants";
 import { AboutFeatureHighlights } from "@/components/sections/about-variants";
 import { TestimonialMarquee } from "@/components/sections/testimonial-variants";
-import { NavbarGlassmorphism } from "../components/navigation/navbar-variants.js";
+import { Navbar2 } from "../components/navigation/navbar-variants.js";
 import { Service1 } from "../components/sections/service-variants.js";
 import {
   GalleryCarousel,
@@ -15,7 +15,11 @@ import Waves from "../components/Waves.js";
 export default function Home() {
   return (
     <div className="min-h-screen w-full overflow-x-hidden">
-      <NavbarGlassmorphism />
+      {/* <NavbarGlassmorphism /> */}
+      {/* <Navbar1 /> */}
+      <Navbar2 />
+      {/* <Navbar1 />
+      <Navbar1 /> */}
 
       <div
         style={{ width: "100%", position: "absolute" }}
