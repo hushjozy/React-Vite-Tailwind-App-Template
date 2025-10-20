@@ -61,37 +61,33 @@ export const sample = [
   {
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    thumbnail: "/moon.webp",
   },
   {
     title: "Cursor",
-    link: "https://cursor.so",
+    link: "",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/cursor.png",
   },
   {
     title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+    link: "",
+    thumbnail: "/rogue.webp",
   },
 
   {
     title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    link: "",
+    thumbnail: "/editorial.webp",
   },
   {
     title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+    link: "",
+    thumbnail: "/editrix.webp",
   },
   {
     title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    link: "",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
   },
