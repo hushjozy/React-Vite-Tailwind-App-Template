@@ -88,11 +88,26 @@ export function NavbarMinimalFade() {
 }
 
 // Navbar Variant 2: Centered Logo
-export function NavbarCenteredLogo() {
+export default function NavbarCenteredLogo() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 40);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
+    <nav
+      className={`fixed left-0 right-0 top-0 z-50 border-b border-border transition-all duration-300 ${
+        isScrolled
+          ? "bg-background/80 backdrop-blur-md"
+          : "bg-black/80 backdrop-blur-0"
+      }`}
+    >
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
           {/* Left Menu */}
