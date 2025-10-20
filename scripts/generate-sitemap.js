@@ -1,18 +1,24 @@
+// scripts/generate-sitemap.js
 import { SitemapStream, streamToPromise } from "sitemap";
 import { createWriteStream } from "fs";
-
-const links = [
-  { url: "/", changefreq: "daily", priority: 1.0 },
-  { url: "/services", changefreq: "weekly", priority: 0.8 },
-  // add all important routes or generate dynamically from your routes list
-];
+import { resolve } from "path";
 
 async function build() {
-  const stream = new SitemapStream({ hostname: "https://puredesign.ng" });
-  const writeStream = createWriteStream("./dist/sitemap.xml");
-  streamToPromise(stream.pipe(writeStream));
-  links.forEach((link) => stream.write(link));
-  stream.end();
+  const sitemap = new SitemapStream({ hostname: "https://puredesign.ng" });
+
+  const writeStream = createWriteStream(resolve("./dist/sitemap.xml"));
+
+  sitemap.pipe(writeStream);
+
+  // Add your routes
+  sitemap.write({ url: "/", changefreq: "daily", priority: 1.0 });
+  sitemap.write({ url: "/about", changefreq: "weekly", priority: 0.8 });
+  // Add more pages here...
+
+  sitemap.end();
+
+  await streamToPromise(sitemap);
+  console.log("✅ Sitemap generated!");
 }
 
-build();
+build().catch(console.error);
