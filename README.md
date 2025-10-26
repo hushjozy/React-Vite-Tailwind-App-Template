@@ -8,15 +8,15 @@ Welcome to the **React Vite Tailwind App Template**! This template is a starting
 ## Table of Contents
 
 - [Overview](#overview)
-    - [Why This Template?](#why-this-template)
-    - [Technologies Used](#technologies-used)
-    - [Features](#features)
+  - [Why This Template?](#why-this-template)
+  - [Technologies Used](#technologies-used)
+  - [Features](#features)
 - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Running the Development Server](#running-the-development-server)
-    - [Building for Production](#building-for-production)
-    - [Linting and Formatting](#linting-and-formatting)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Development Server](#running-the-development-server)
+  - [Building for Production](#building-for-production)
+  - [Linting and Formatting](#linting-and-formatting)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -162,51 +162,13 @@ react-vite-app-template/
 - **package.json**: Project metadata and dependencies.
 - **postcss.config.js**: PostCSS configuration file.
 - **public/**: Contains static assets.
-    - **vite.svg**: Vite logo used in the project.
+  - **vite.svg**: Vite logo used in the project.
 - **README.md**: Project documentation.
 - **src/**: Contains the main source code for the React application.
-    - **App.jsx**: The main App component.
-    - **index.css**: Global CSS styles.
-    - **main.jsx**: The entry point of the application.
+  - **App.jsx**: The main App component.
+  - **index.css**: Global CSS styles.
+  - **main.jsx**: The entry point of the application.
 - **tailwind.config.js**: Tailwind CSS configuration file.
 - **vite.config.js**: Vite configuration file.
 
 ## Contributing
-
-We welcome contributions to enhance the Gemini Clone project. To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix:
-
-   ```bash
-   git checkout -b feature-name
-   ```
-
-3. Make your changes and commit them with clear and descriptive messages.
-4. Push your changes to your fork:
-
-   ```bash
-   git push origin feature-name
-   ```
-
-5. Create a pull request to the main repository, detailing the changes and enhancements you have made.
-
-## Contact
-
-- **LinkedIn**: [Ranit Manik](https://www.linkedin.com/in/ranit-manik/)
-- **GitHub**: [RanitManik](https://github.com/RanitManik)
-- **Email**: [ranitmanik.dev@gmail.com](mailto:ranitmanik.dev@gmail.com)
-
-_Feel free to reach out if you have questions or just want to chat about web adventures!_
-
-## Acknowledgments
-
-- [Markdown Badges](https://github.com/Ileriayo/markdown-badges)
-- [shields.io Badges](https://shields.io/)
-- [Skill Icons](https://github.com/tandpfun/skill-icons)
-
----
-
-<p align="center">
-   Thank you for using the <strong>React Vite Tailwind App Template</strong>! Happy coding! 🚀
-</p>

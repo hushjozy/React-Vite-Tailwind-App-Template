@@ -291,14 +291,21 @@ export function FooterContactInfo() {
               touch with us today.
             </p>
             <div className="space-y-3">
-              <div className="flex items-center gap-3 text-sm">
+              <a
+                href="mailto:dev@puredesign.ng"
+                className="flex items-center gap-3 text-sm transition-colors hover:text-white"
+              >
                 <Mail className="h-5 w-5 !text-white/80" />
-                <span className="text-white/80">info@puredesign.ng</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm">
+                <span className="text-white/80">dev@puredesign.ng</span>
+              </a>
+
+              <a
+                href="tel:+23491342448820"
+                className="flex items-center gap-3 text-sm transition-colors hover:text-white"
+              >
                 <Phone className="h-5 w-5 !text-white/80" />
                 <span className="text-white/80">+234 91342448820</span>
-              </div>
+              </a>
             </div>
           </motion.div>
 
