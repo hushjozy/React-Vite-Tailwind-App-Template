@@ -10,7 +10,7 @@ import {
 } from "../components/sections/gallery-variants.js";
 import { Footer4 } from "../components/sections/footer-variants.js";
 import { HeroParallaxRender } from "../components/parallax/HeroParallaxRender.js";
-import Waves from "../components/Waves.js";
+// import Waves from "../components/Waves.js";
 import { TextHoverEffect } from "../components/ui/text-hover-effect.js";
 import ScrollStack, { ScrollStackItem } from "../components/ScrollStack.js";
 import { Cloud, Cpu, Icon, Layers, Lightbulb, Rocket } from "lucide-react";
@@ -46,7 +46,7 @@ export default function Home() {
           autoResumeDelay={3000}
           autoRampDuration={0.6}
         /> */}
-        <Waves
+        {/* <Waves
           lineColor="#ffffffb2"
           backgroundColor="rgba(255, 255, 255, 0.2)"
           waveSpeedX={0.02}
@@ -58,7 +58,7 @@ export default function Home() {
           maxCursorMove={120}
           xGap={12}
           yGap={36}
-        />
+        /> */}
       </div>
       <div style={{ width: "100%", position: "relative" }} className="z-[10]">
         <HeroParallaxScroll />
