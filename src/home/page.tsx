@@ -9,7 +9,7 @@ import {
   GalleryMasonry,
 } from "../components/sections/gallery-variants.js";
 import { Footer4 } from "../components/sections/footer-variants.js";
-import { HeroParallaxRender } from "../components/parallax/HeroParallaxRender.js";
+// import { HeroParallaxRender } from "../components/parallax/HeroParallaxRender.js";
 // import Waves from "../components/Waves.js";
 import { TextHoverEffect } from "../components/ui/text-hover-effect.js";
 import ScrollStack, { ScrollStackItem } from "../components/ScrollStack.js";
@@ -25,11 +25,11 @@ export default function Home() {
       {/* <Navbar1 />
       <Navbar1 /> */}
 
-      <div
+      {/* <div
         style={{ width: "100%", position: "absolute" }}
         className="left-0 top-0 h-[730px] lg:h-[1080px]"
-      >
-        {/* <LiquidEther
+      > */}
+      {/* <LiquidEther
           colors={["#dcb3e3e0", "#3d0c34e0", "#577daee0"]}
           mouseForce={20}
           cursorSize={80}
@@ -46,7 +46,7 @@ export default function Home() {
           autoResumeDelay={3000}
           autoRampDuration={0.6}
         /> */}
-        {/* <Waves
+      {/* <Waves
           lineColor="#ffffffb2"
           backgroundColor="rgba(255, 255, 255, 0.2)"
           waveSpeedX={0.02}
@@ -59,10 +59,10 @@ export default function Home() {
           xGap={12}
           yGap={36}
         /> */}
-      </div>
+      {/* </div> */}
       <div style={{ width: "100%", position: "relative" }} className="z-[10]">
         <HeroParallaxScroll />
-        <HeroParallaxRender />
+        {/* <HeroParallaxRender /> */}
         <AboutFeatureHighlights />
         <div className="flex h-[30rem] w-full items-center justify-center">
           <TextHoverEffect text="PURELY" />
