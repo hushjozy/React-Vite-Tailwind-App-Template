@@ -12,9 +12,9 @@ import { Footer4 } from "../components/sections/footer-variants.js";
 // import { HeroParallaxRender } from "../components/parallax/HeroParallaxRender.js";
 // import Waves from "../components/Waves.js";
 import { TextHoverEffect } from "../components/ui/text-hover-effect.js";
-import ScrollStack, { ScrollStackItem } from "../components/ScrollStack.js";
-import { Cloud, Cpu, Icon, Layers, Lightbulb, Rocket } from "lucide-react";
-import BlurText from "../components/BlurText.js";
+// import ScrollStack, { ScrollStackItem } from "../components/ScrollStack.js";
+// import { Cloud, Cpu, Icon, Layers, Lightbulb, Rocket } from "lucide-react";
+// import BlurText from "../components/BlurText.js";
 
 export default function Home() {
   return (
@@ -64,14 +64,14 @@ export default function Home() {
         <HeroParallaxScroll />
         {/* <HeroParallaxRender /> */}
         <AboutFeatureHighlights />
-        <div className="flex h-[30rem] w-full items-center justify-center">
+        <div className="flex h-[20rem] w-full items-center justify-center">
           <TextHoverEffect text="PURELY" />
         </div>
-        <div className="flex h-[30rem] w-full items-center justify-center">
+        <div className="flex h-[20rem] w-full items-center justify-center">
           <TextHoverEffect text="MAGICAL" />
         </div>
         <Service1 />
-        <ScrollStack className="!relative !h-[100vh] py-[20px] lg:py-[20%]">
+        {/* <ScrollStack className="!relative !h-[100vh] py-[20px] lg:py-[20%]">
           <ScrollStackItem itemClassName="!bg-[#8A2BE2] !h-fit !py-[80px] !flex !flex-row justify-center  flex-wrap lg:flex-nowrap gap-[40px] !px-[20%]">
             <div>
               <BlurText
@@ -160,7 +160,7 @@ export default function Home() {
               <Cloud className="h-[80px] w-[80px] text-white" strokeWidth={3} />
             </div>
           </ScrollStackItem>
-        </ScrollStack>
+        </ScrollStack> */}
         <TestimonialMarquee />
 
         <GalleryMasonry />
