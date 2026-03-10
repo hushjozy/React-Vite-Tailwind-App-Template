@@ -1,21 +1,10 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import {
-  Target,
-  Users,
-  Rocket,
-  Award,
-  Heart,
-  Lightbulb,
-  Settings,
-  Cloud,
-  Handshake,
-  Paintbrush,
-} from "lucide-react";
+import { Settings, Cloud, Handshake, Paintbrush } from "lucide-react";
 import { useRef } from "react";
 import GlassIcons from "../GlassIcon.js";
-import { CometCard } from "../ui/comet-card.js";
+// import { CometCard } from "../ui/comet-card.js";
 import { TextGenerateEffect } from "../ui/text-generate-effect.js";
 
 // // About Variant 1: Two Column Story
@@ -527,8 +516,8 @@ export function AboutFeatureHighlights() {
                   i % 2 === 1 ? "custom-class md:order-1" : "custom-class"
                 }
               >
-                <CometCard>
-                  {/* <button
+                {/* <CometCard> */}
+                {/* <button
                     type="button"
                     className="my-10 flex aspect-video cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2 saturate-0 md:my-20 md:p-4"
                     aria-label="View invite F7RA"
@@ -559,25 +548,25 @@ export function AboutFeatureHighlights() {
                       </div>
                     </div>
                   </button> */}
-                  <div
-                    className={`relative aspect-video rounded-3xl bg-muted ${
-                      i % 2 === 1
-                        ? "custom-class bg-black md:order-1"
-                        : "custom-class bg-slate-500"
-                    }`}
-                  >
-                    <img
-                      loading="lazy"
-                      className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover contrast-75"
-                      alt="Invite background"
-                      src={feature?.uri}
-                      style={{
-                        boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
-                        opacity: 1,
-                      }}
-                    />
-                  </div>
-                </CometCard>
+                <div
+                  className={`relative aspect-video rounded-3xl bg-muted ${
+                    i % 2 === 1
+                      ? "custom-class bg-black md:order-1"
+                      : "custom-class bg-slate-500"
+                  }`}
+                >
+                  <Image
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover contrast-75"
+                    alt="Invite background"
+                    src={feature?.uri}
+                    style={{
+                      boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
+                      opacity: 1,
+                    }}
+                  />
+                </div>
+                {/* </CometCard> */}
                 {/* <div className="aspect-video rounded-3xl bg-muted" /> */}
               </div>
             </motion.div>
